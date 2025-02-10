@@ -30,10 +30,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AuthProvider>
-          <div className="max-w-4xl mx-auto flex flex-col items-center justify-center">
-            <div className="w-full">
+          <div className="max-w-2xl mx-auto flex flex-col items-center justify-center">
+            <div className="w-full px-4">
               <Header />
-              <main>{children}</main>
+              <main className="mt-12">{children}</main>
             </div>
           </div>
         </AuthProvider>

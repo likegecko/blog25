@@ -1,16 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/lib/hooks/useAuth";
 
 export default function LoginForm() {
   const [error, setError] = useState("");
   const { loginWithGoogle } = useAuth();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const from = searchParams.get("from") || "/";
 
   const handleGoogleLogin = async () => {
     try {
       await loginWithGoogle();
-      // 로그인 성공 후 리다이렉트 또는 다른 작업
+      // 로그인 성공 후 이전 페이지 또는 홈으로 리다이렉트
+      router.push(from);
     } catch (error) {
       setError("구글 로그인에 실패했습니다. 다시 시도해주세요.");
     }

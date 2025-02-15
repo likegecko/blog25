@@ -17,6 +17,7 @@ export default function LoginForm() {
       // 로그인 성공 후 이전 페이지 또는 홈으로 리다이렉트
       router.push(from);
     } catch (error) {
+      console.error(error);
       setError("구글 로그인에 실패했습니다. 다시 시도해주세요.");
     }
   };

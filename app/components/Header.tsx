@@ -6,7 +6,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { useState } from "react";
-import { Button, Handle, MenuList, MenuListItem, Separator } from "react95";
+import { Button } from "react95/dist/Button/Button";
+import { Handle } from "react95/dist/Handle/Handle";
+import { MenuList } from "react95/dist/MenuList/MenuList";
+import { MenuListItem } from "react95/dist/MenuList/MenuListItem";
+import { Separator } from "react95/dist/Separator/Separator";
 
 export const Header = () => {
   const { user } = useAuth();

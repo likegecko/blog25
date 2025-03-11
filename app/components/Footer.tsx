@@ -1,4 +1,4 @@
-import { Frame } from "react95";
+import { Frame } from "react95/dist/Frame/Frame";
 
 const Footer = () => {
   return (

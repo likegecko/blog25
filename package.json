@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@firebase/auth": "^1.9.0",
+    "@uiw/react-md-editor": "^4.0.5",
     "firebase": "^11.3.0",
     "lucide-react": "^0.475.0",
     "next": "15.1.6",

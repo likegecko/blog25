@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 !mt-12">
       <section className="flex flex-col items-center">
         <div className="flex justify-center items-center rounded-full overflow-hidden w-[240px] h-[240px]">
           <Image

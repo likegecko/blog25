@@ -1,10 +1,12 @@
+import { Frame } from "react95";
+
 const Footer = () => {
   return (
-    <div className="py-6 flex items-center justify-center">
+    <Frame shadow className="!px-6 !py-2 !flex items-center !justify-end">
       <p className="text-xs text-gray-500">
-        © 2021–2025 Kim Taesu · Powered by Coffee and Zero Coke.
+        © 2021–2025 Kim Taesu · Powered by Coffee.
       </p>
-    </div>
+    </Frame>
   );
 };
 

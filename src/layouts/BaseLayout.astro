@@ -1,0 +1,23 @@
+---
+import Header from '../components/Header.tsx';
+import Footer from '../components/Footer.astro';
+import BaseHead from '../components/BaseHead.astro';
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <div class="w-full flex justify-center">
+      <main class="w-full max-w-4xl bg-red-200 px-4">
+        <slot />
+      </main>
+    </div>
+    <Footer />
+  </body>
+</html>

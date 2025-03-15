@@ -10,7 +10,7 @@ const posts = (await getCollection('blog')).sort(
 
 <BaseLayout>
   <section>
-    <ul class="flex flex-wrap gap-x-6">
+    <ul class="flex flex-wrap gap-x-16 gap-y-12">
       {
         posts.map((post) => (
           <li>

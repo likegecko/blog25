@@ -8,8 +8,11 @@ type PostCardProps = {
     id: string;
     data: {
       title: string;
+      description: string;
       heroImage?: string;
       pubDate: Date;
+      tags?: string[];
+      category?: string;
     };
   };
 };
@@ -20,7 +23,7 @@ const PostCard = ({ post }: PostCardProps) => {
   return (
     <a href={`/blog/${post.id}/`}>
       <article
-        className="flex flex-col gap-6 w-full phone:w-[420px]"
+        className="flex flex-col gap-6 w-full phone:w-[400px]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

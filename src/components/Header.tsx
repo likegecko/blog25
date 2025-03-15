@@ -7,7 +7,6 @@ const Header = () => {
         <h1 className="text-xl font-bold">{SITE_TITLE}</h1>
         <nav className="flex items-center gap-4">
           <a href="/">Home</a>
-          <a href="/blog">Blog</a>
           <a href="/about">About</a>
         </nav>
       </div>

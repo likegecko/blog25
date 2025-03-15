@@ -14,9 +14,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body>
+  <body class="h-screen flex flex-col">
     <Header />
-    <div class="w-full flex justify-center">
+    <div class="w-full flex justify-center flex-1">
       <main class="w-full max-w-4xl bg-red-200 px-4">
         <article>
           <div class="hero-image">

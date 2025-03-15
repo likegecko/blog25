@@ -11,7 +11,7 @@ type PostCardProps = {
       description: string;
       heroImage?: string;
       pubDate: Date;
-      tags?: string[];
+      tags?: string;
       category?: string;
     };
   };
@@ -19,9 +19,9 @@ type PostCardProps = {
 
 const PostCard = ({ post }: PostCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
-
+  const tags = post.data.tags?.split(' ');
   return (
-    <a href={`/blog/${post.id}/`}>
+    <a href={`/posts/${post.id}/`}>
       <article
         className="flex flex-col gap-6 w-full phone:w-[400px]"
         onMouseEnter={() => setIsHovered(true)}
@@ -46,7 +46,13 @@ const PostCard = ({ post }: PostCardProps) => {
             {post.data.title}
           </h4>
         </div>
-        <ul></ul>
+        <ul className="flex flex-wrap gap-2">
+          {tags?.map((tag) => (
+            <li className="rounded-md bg-gray-900 text-gray-100 py-1 px-2 text-xs font-light">
+              {tag}
+            </li>
+          ))}
+        </ul>
       </article>
     </a>
   );

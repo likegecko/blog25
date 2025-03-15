@@ -1,9 +1,9 @@
 ---
-title: BFF(Backend For Frontend)에 대한 짧막한 이야기들
+title: 'BFF(Backend For Frontend)에 대한 짧막한 이야기들'
 description: 'BFF에 관한 짧막한 이야기입니다.'
 pubDate: '2022-10-08'
-tags: msa architecture bff
-category: development
+tags: 'msa architecture bff'
+category: 'development'
 heroImage: '/blog-placeholder-2.jpg'
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: Apollo Client Batch Request 적용하기
+title: 'Apollo Client Batch Request 적용하기'
 description: ''
 pubDate: '2023-05-18'
-tags: graphql bff apollo
-categories: development
+tags: 'graphql bff apollo'
+categories: 'development'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 

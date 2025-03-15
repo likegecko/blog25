@@ -3,3 +3,7 @@
 @theme {
   --breakpoint-phone: 896px;
 }
+
+body {
+  font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+}
